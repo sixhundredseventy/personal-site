@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="riyuko.cc">
+	<main>
+		<div class="content">
+			<div class="p-2">
+				<img src="/pfp.jpg" alt="profile picture" class="rounded-full m-auto pfp w-48 h-auto">
+			</div>
+			<p class="sm:text-sm lg:text-xl tracking-widest titles">network engineer | programmer | system administrator</p>
+			<div class="flex flex-row justify-center p-4">
+				<a href="https://instagram.com/stealingyourserver" class="text-3xl hover:text-gray-700 mx-2"><i class="fab fa-instagram" title="Instagram"></i></a>
+				<a href="https://twitter.com/riyuko1337" class="text-3xl hover:text-gray-700 mx-2"><i class="fab fa-twitter" title="Twitter"></i></a>
+				<a href="https://github.com/stealingyourserver" class="text-3xl hover:text-gray-700 mx-2"><i class="fab fa-github" title="Github"></i></a>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.content {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.titles {
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 5px 1px 0 #000;
+	}
+	.pfp {
+		border: 2px solid white;
+	}
+</style>
