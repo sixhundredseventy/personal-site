@@ -11,12 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^3.0.0",
+    "@astrojs/deno": "^1.1.0",
     "@astrojs/mdx": "^0.11.4",
     "@astrojs/prefetch": "^0.0.8",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.0.2",
-    "@astrojs/vercel": "^2.1.0",
     "astro": "^1.4.6",
     "astro-compress": "^1.0.11",
     "sharp": "^0.31.1",
