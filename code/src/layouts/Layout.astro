@@ -17,9 +17,9 @@ export interface Props {
 	</head>
 	<body>
 		<div class="videobg">
-			<div class="overlay"></div>
 			<video src="/bg.mp4" loop muted autoplay>
 			</video>
+			<div class="overlay"></div>
 			<slot />
 		</div>
 	</body>
@@ -46,6 +46,18 @@ export interface Props {
 		left: 0;
 		background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
 		background-size: 3px 3px;
+	}
+
+	.videobg video {
+		width: 110%;
+		height: 110%;
+		width: auto;
+		height: 100%;
+		-moz-transform:scale(1.5);
+		-webkit-transform:scale(1.5);
+		-o-transform:scale(1.5);
+		-ms-transform:scale(1.5);
+		transform:scale(1.5);
 	}
 	@media (max-width: 1200px) {
 		.videobg video {
