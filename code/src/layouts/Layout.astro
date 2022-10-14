@@ -17,9 +17,9 @@ export interface Props {
 	</head>
 	<body>
 		<div class="videobg">
-			<div class="overlay"></div>
 			<video src="/bg.mp4" loop muted autoplay>
 			</video>
+			<div class="overlay"></div>
 			<slot />
 		</div>
 	</body>
@@ -52,8 +52,18 @@ export interface Props {
 		background-size: 3px 3px;
 	}
 	.videobg video {
+<<<<<<< Updated upstream
 		width: 110%;
 		height: 110%;
+=======
+		width: auto;
+		height: 100%;
+		-moz-transform:scale(1.5);
+		-webkit-transform:scale(1.5);
+		-o-transform:scale(1.5);
+		-ms-transform:scale(1.5);
+		transform:scale(1.5);
+>>>>>>> Stashed changes
 	}
 	@media (max-width: 1200px) {
 		.videobg video {
