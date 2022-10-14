@@ -5,11 +5,16 @@ import mdx from "@astrojs/mdx";
 import prefetch from "@astrojs/prefetch";
 import compress from "astro-compress";
 
-import netlify from "@astrojs/netlify/functions";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), sitemap(), mdx(), prefetch(), compress()],
-  output: "server",
-  adapter: netlify()
+  adapter: cloudflare(),
+  output: 'server',
+  build: {
+    server: './code/dist/server/',
+    client: './code/dist/client/',
+    serverEntry: 'entry.mjs',
+  }
 });
