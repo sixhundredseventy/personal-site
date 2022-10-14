@@ -31,15 +31,11 @@ export interface Props {
 		color: white;
 		text-align: center;
 	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
 	.videobg {
 		position: relative;
 		overflow: hidden;
-		width: auto;
-		height: 100vh;
+		width: 100vw;
+ 		height: 100vh;
 		background: url("/static.jpg") no-repeat center center/cover;
 	}
 	.overlay {
@@ -50,10 +46,6 @@ export interface Props {
 		left: 0;
 		background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
 		background-size: 3px 3px;
-	}
-	.videobg video {
-		width: 110%;
-		height: 110%;
 	}
 	@media (max-width: 1200px) {
 		.videobg video {
