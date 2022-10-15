@@ -9,11 +9,9 @@ import partytown from "@astrojs/partytown";
 import critters from "astro-critters";
 import compressor from "astro-compressor";
 
-import htmlMinifier from "astro-html-minifier";
-
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sitemap(), mdx(), prefetch(), compress(), partytown(), critters(), compressor(), htmlMinifier()],
+  integrations: [tailwind(), sitemap(), mdx(), prefetch(), compress(), partytown(), critters(), compressor()],
   adapter: cloudflare(),
   output: 'server',
   build: {
