@@ -14,7 +14,7 @@
     "@astrojs/cloudflare": "^3.1.0",
     "@astrojs/mdx": "^0.11.4",
     "@astrojs/partytown": "^1.0.1",
-    "@astrojs/prefetch": "^0.0.8",
+    "@astrojs/prefetch": "^0.1.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.0.2",
     "astro": "^1.4.6",
